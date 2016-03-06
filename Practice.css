@@ -1,0 +1,27 @@
+h1 {
+	font-family: cursive;
+	color: #36648b;
+	margin: auto;
+	text-align: center;
+}
+
+td {
+	padding: 10px;
+}
+
+table {
+	text-align: center;
+	padding: 1%;
+	margin:1% 0 3% 18%;
+}
+
+form {
+	text-align: center;
+	padding: 3px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: #222;
+}
+
+
+
+
