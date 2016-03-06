@@ -10,13 +10,16 @@
 		<script type = "text/javascript">
 			//USO DE PROMPTS
 			var nombre = prompt ("¿Cual es tú nombre?");
-			document.write("¡Bienvenido " + nombre + "!");
+			document.write("¡Bienvenido " + nombre + "!<br>");
 			/*PARA HACER UN ARREGLO
 			var lista = new Array ("plátanos ", "patatas ", "helado ", "filetes ");
 			document.write(lista);*/
 			//ESTRUCTURAS Y CONDICIONALES
 			if (nombre.length >= 7) {
 				alert("¡Tú nombre es largo amigo!");
+			}
+			else {
+				document.write("Muy bien " + nombre + ", tienes un nombre corto");
 			}
 		</script>
 	</head>
