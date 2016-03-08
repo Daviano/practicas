@@ -8,19 +8,21 @@
 		
 		<!--AQUI VA UN JAVASCRIPT-->
 		<script type = "text/javascript">
-			//USO DE PROMPTS
+			// USO DE PROMPTS
 			var nombre = prompt ("¿Cual es tú nombre?");
 			document.write("¡Bienvenido " + nombre + "!<br>");
 			/*PARA HACER UN ARREGLO
 			var lista = new Array ("plátanos ", "patatas ", "helado ", "filetes ");
 			document.write(lista);*/
-			//ESTRUCTURAS Y CONDICIONALES
+			// ESTRUCTURAS Y CONDICIONALES
 			if (nombre.length >= 7) {
 				alert("¡Tú nombre es largo amigo!");
 			}
 			else {
-				document.write("Muy bien " + nombre + ", tienes un nombre corto");
+				document.write("Muy bien " + nombre + ", tienes un nombre corto<br>");
 			}
+			// ESTO VA A IMPRIMIR "derf"
+      		document.write("wonderful day".substring(3,7));
 		</script>
 	</head>
 	<body>
