@@ -4,16 +4,17 @@
 		<!-- METATAG PARA CARACTERES ESPECIALES -->
 		<meta charset = "UTF-8"/>
 		<link type = "text/css" rel = "stylesheet" href = "Practice.css" />
-		<title>My Practice Area</title>
-
-		<!--AQUI VA UN JAVASCRIPT-->
+		<title>My CyberLab</title>	
+	</head>
+	<body>
+	<h1>El Cyberlab de Daviano</h1>
+			<!--AQUI VA UN JAVASCRIPT-->
 		<script type = "text/javascript">
+			// ESTO VA A IMPRIMIR "Daviano"
+      		document.write("Davianote".substring(0,7) + "</br>");
 			// USO DE PROMPTS
 			var nombre = prompt ("¿Cual es tú nombre?");
 			document.write("¡Bienvenido " + nombre + "!<br>");
-			/*PARA HACER UN ARREGLO*/
-			var sefirot = new Array ("Keter ", "Jojmá ", "Biná ", "Jesed ", "Guevurah ", "Tiferet ", "Netzaj ", "Hod ", "Yesod ", "Maljut ");
-			document.write(sefirot);
 			// ESTRUCTURAS Y CONDICIONALES
 			if (nombre.length >= 7) {
 				alert("¡Tú nombre es largo amigo!");
@@ -21,28 +22,34 @@
 			else {
 				document.write("Muy bien " + nombre + ", tienes un nombre corto<br>");
 			}
-			// ESTO VA A IMPRIMIR "derf"
-      		document.write("wonderful day".substring(3,7) + "</br>");
-			  
-			 /*FOR LOOPS*/
-			 	for (i = 0; i < 11; i++) {
+			
+			/*PARA HACER E IMPRIMIR UN ARREGLO USANDO FOR LOOPS*/
+			var sefirot = new Array ("Keter", " Jojmá", " Biná", " Jesed", " Guevurah", " Tiferet", " Netzaj", " Hod", " Yesod", " Maljut");
+			for (i = 0; i < sefirot.length; i++) {
+				document.write (sefirot[i] + "<br/>");
+			}
+				 
+			for (i = 0; i < 11; i++) {
 					if (i == 5) {
 						break;	
 						/*continue; ESTO ES PARA SALTARSE EL 5*/
 					}
 				 console.log ("Hola " + i);
 			 }
-
+			 
 			//WHILE LOOPS
 			var a = 0;
 			while (a < 10) {
-			   document.write ("Hola" + "</br>");
+			   console.log ("Hola" + "</br>");
 			   a = a + 1;
 			}
+			
+			//FUNCIONES
+			function test () {
+				document.write ("Esta es mi primer función de JavaScript");
+			}
+			test();
 		</script>
-	</head>
-	<body>
-			<h1>El Cyberlab de Daviano</h1>
 		<!-- <form>PARA HACER FORMULARIOS Y BOTONES</form> -->
 		<form>
    Username <input type = "password" name = "nombre" value = "alohaaaa"/> <!--LO QUE SEA-->
@@ -210,8 +217,6 @@
 		</table>
 		
 		<!-- <textarea>PARA HACER LISTADOS DE OPCIONES</textarea> --> <!-- ROWS SIRVE PARA LO ALTO Y COLS PARA LO ANCHO DEL AREA -->
-		<textarea name = "comentarios" rows = "10" cols = "50"> 
-			
-		</textarea>
+		<textarea name = "comentarios" rows = "10" cols = "50"></textarea>
 	</body>
 </html>
