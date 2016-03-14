@@ -192,7 +192,7 @@
 			/*PARA HACER E IMPRIMIR UN ARREGLO USANDO FOR LOOPS*/
 			var sefirot = new Array ("Keter", " Jojmá", " Biná", " Jesed", " Guevurah", " Tiferet", " Netzaj", " Hod", " Yesod", " Maljut");
 			for (i = 0; i < sefirot.length; i++) {
-				document.write (sefirot[i] + "<br/>");
+				console.log (sefirot[i] + "<br/>");
 			}
 				 
 			for (i = 0; i < 11; i++) {
@@ -211,10 +211,11 @@
 			}
 			
 			//FUNCIONES
-			function test () {
-				document.write ("Esta es mi primer función de JavaScript");
+			function test (x,z) {
+				z = x + y;
+				return z;
 			}
-			test();
+			alert(test(4,5));
 		</script>
 		<div id="footer"></div>
 			
