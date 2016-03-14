@@ -7,56 +7,15 @@
 		<title>My CyberLab</title>	
 	</head>
 	<body>
-	<h1>El Cyberlab de Daviano</h1>
-			<!--AQUI VA UN JAVASCRIPT-->
-		<script type = "text/javascript">
-			// ESTO VA A IMPRIMIR "Daviano"
-      		document.write("Davianote".substring(0,7) + "</br>");
-			// USO DE PROMPTS
-			var nombre = prompt ("¿Cual es tú nombre?");
-			document.write("¡Bienvenido " + nombre + "!<br>");
-			// ESTRUCTURAS Y CONDICIONALES
-			if (nombre.length >= 7) {
-				alert("¡Tú nombre es largo amigo!");
-			}
-			else {
-				document.write("Muy bien " + nombre + ", tienes un nombre corto<br>");
-			}
-			
-			/*PARA HACER E IMPRIMIR UN ARREGLO USANDO FOR LOOPS*/
-			var sefirot = new Array ("Keter", " Jojmá", " Biná", " Jesed", " Guevurah", " Tiferet", " Netzaj", " Hod", " Yesod", " Maljut");
-			for (i = 0; i < sefirot.length; i++) {
-				document.write (sefirot[i] + "<br/>");
-			}
-				 
-			for (i = 0; i < 11; i++) {
-					if (i == 5) {
-						break;	
-						/*continue; ESTO ES PARA SALTARSE EL 5*/
-					}
-				 console.log ("Hola " + i);
-			 }
-			 
-			//WHILE LOOPS
-			var a = 0;
-			while (a < 10) {
-			   console.log ("Hola" + "</br>");
-			   a = a + 1;
-			}
-			
-			//FUNCIONES
-			function test () {
-				document.write ("Esta es mi primer función de JavaScript");
-			}
-			test();
-		</script>
-		<!-- <form>PARA HACER FORMULARIOS Y BOTONES</form> -->
-		<form>
-   Username <input type = "password" name = "nombre" value = "alohaaaa"/> <!--LO QUE SEA-->
-   Password <input type = "text" name = "contraseña" /> <br> <!-- PASSWORD SERA SU ALREVES DEL USERNAME-->
-			<input type = "radio" name = "igual" value = "menor" />+<br> <!-- CON RADIO PUEDO ESCOGER SOLO UNA OPCION-->
-			<input type = "radio" name = "igual" value = "mayor" />-<br>
-			<input type = "checkbox" name = "carro" value = "BMW" />+<input type = "checkbox" name = "carro" value = "BMW" />+<input type = "checkbox" name = "carro" value = "BMW" />-<input type = "checkbox" name = "carro" value = "BMW" />- </br> <!-- CON CHECKBOX PUEDO ESCOGER VARIAS OPCIONES-->	
+		<div id="header">
+			<h1>El Cyberlab de Daviano</h1>
+			<!-- <form>PARA HACER FORMULARIOS Y BOTONES</form> -->
+			<form>
+		Username <input type = "password" name = "nombre" value = "alohaaaa"/> <!--LO QUE SEA-->
+		Password <input type = "text" name = "contraseña" /> <br> <!-- PASSWORD SERA SU ALREVES DEL USERNAME-->
+					<input type = "radio" name = "igual" value = "menor" />+<br> <!-- CON RADIO PUEDO ESCOGER SOLO UNA OPCION-->
+					<input type = "radio" name = "igual" value = "mayor" />-<br>
+					<input type = "checkbox" name = "carro" value = "BMW" />+<input type = "checkbox" name = "carro" value = "BMW" />+<input type = "checkbox" name = "carro" value = "BMW" />-<input type = "checkbox" name = "carro" value = "BMW" />- </br> <!-- CON CHECKBOX PUEDO ESCOGER VARIAS OPCIONES-->	
 			
 		    <!-- <select>PARA HACER LISTADOS DE OPCIONES</select> -->
 			<select name = "colores">
@@ -66,8 +25,10 @@
 				<option value = "menos">Menos</option>
 			</select></br>
 			<input type = "button" name = "Ingresa" value = "Ingresa... si puedes" />	
-		</form>	
-		    <!-- <table>PARA HACER TABLAS</table> -->
+		</form>
+		</div>
+		<div class="left">
+			<!-- <table>PARA HACER TABLAS</table> -->
 		<table border = "1px">
 			<thead style = "text-align: center">
 	            <th colspan = "18" style = "color: red">Tabla Periodavianica</th>
@@ -215,6 +176,53 @@
 				<td>On</td>
 			</tr>
 		</table>
+		</div>
+		<div class="right">
+			<script type = "text/javascript">
+			// ESTO VA A IMPRIMIR "Daviano"
+      		document.write("Davianote".substring(0,7) + "</br>");
+			// USO DE PROMPTS
+			var nombre = prompt ("¿Cual es tú nombre?");
+			document.write("¡Bienvenido " + nombre + "!<br>");
+			// ESTRUCTURAS Y CONDICIONALES
+			if (nombre.length >= 7) {
+				alert("¡Tú nombre es largo amigo!");
+			}
+			else {
+				document.write("Muy bien " + nombre + ", tienes un nombre corto<br>");
+			}
+			
+			/*PARA HACER E IMPRIMIR UN ARREGLO USANDO FOR LOOPS*/
+			var sefirot = new Array ("Keter", " Jojmá", " Biná", " Jesed", " Guevurah", " Tiferet", " Netzaj", " Hod", " Yesod", " Maljut");
+			for (i = 0; i < sefirot.length; i++) {
+				document.write (sefirot[i] + "<br/>");
+			}
+				 
+			for (i = 0; i < 11; i++) {
+					if (i == 5) {
+						break;	
+						/*continue; ESTO ES PARA SALTARSE EL 5*/
+					}
+				 console.log ("Hola " + i);
+			 }
+			 
+			//WHILE LOOPS
+			var a = 0;
+			while (a < 10) {
+			   console.log ("Hola" + "</br>");
+			   a = a + 1;
+			}
+			
+			//FUNCIONES
+			function test () {
+				document.write ("Esta es mi primer función de JavaScript");
+			}
+			test();
+		</script>
+		</div>
+		<div id="footer"></div>
+			
+		    
 		
 		<!-- <textarea>PARA HACER LISTADOS DE OPCIONES</textarea> --> <!-- ROWS SIRVE PARA LO ALTO Y COLS PARA LO ANCHO DEL AREA -->
 		<textarea name = "comentarios" rows = "10" cols = "50"></textarea>
