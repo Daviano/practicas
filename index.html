@@ -176,17 +176,19 @@
 			</tr>
 		</table>
 			<script type = "text/javascript">
-			// ESTO VA A IMPRIMIR "Daviano"
-      		document.write("Davianote".substring(0,7) + "</br>");
+			// ESTO VA A IMPRIMIR "Daviano" POR MEDIO DE LA PROPIEDAD SUBSTRING
+			var d = "Davianote";
+      		document.write(d.substring(0,7).toUpperCase() + "</br>"); //.toUpperCase ES UN MÉTODO, Y UN MÉTODO ES UNA FUNCIÓN!!!
 			// USO DE PROMPTS
 			var nombre = prompt ("¿Cual es tú nombre?");
 			document.write("¡Bienvenido " + nombre + "!<br>");
-			// ESTRUCTURAS Y CONDICIONALES
+			// ESTRUCTURAS Y CONDICIONALES 
+			//.lenght ES OTRA DE LAS TANTAS PROPIEDADES QUE EXISTEN EN JAVA SCRIPT
 			if (nombre.length >= 7) {
 				alert("¡Tú nombre es largo amigo!");
 			}
 			else {
-				document.write("Muy bien " + nombre + ", tienes un nombre corto<br>");
+				document.write("Muy bien " + nombre.fontcolor ("red") + ", tienes un nombre corto <br>");
 			}
 			
 			/*PARA HACER E IMPRIMIR UN ARREGLO USANDO FOR LOOPS*/
