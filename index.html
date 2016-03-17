@@ -177,8 +177,13 @@
 		</table>
 			<script type = "text/javascript">
 			// ESTO VA A IMPRIMIR "Daviano" POR MEDIO DE LA PROPIEDAD SUBSTRING
-			var d = "Davianote";
+			var d = "Davianote es muy grandote";
       		document.write(d.substring(0,7).toUpperCase() + "</br>"); //.toUpperCase ES UN MÉTODO, Y UN MÉTODO ES UNA FUNCIÓN!!!
+			//POR EJEMPLO ESTE MÉTODO VA A MOSTRAR LA POSICIÓN DE LA VARIABLE d
+			console.log ("La posición de la palabra grandote es " + d.indexOf("grandote"));
+			console.log ("Cuando el indexOf busca algo que no encuentra, el resultado es " + d.indexOf("jose"));
+			console.log ("El método match busca algo en específico, y si lo encuentra nos lo imprime tal cual: " + d.match("grandote"));
+			console.log ("Pero si en el match ponemos algo que no hay, nos entrega el valor: " + d.match("jose"));
 			// USO DE PROMPTS
 			var nombre = prompt ("¿Cual es tú nombre?");
 			document.write("¡Bienvenido " + nombre + "!<br>");
